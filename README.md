@@ -44,6 +44,7 @@ Functional Simulation:
 
 
 ## Fig 2: Invoke the Cadence Environment
+![WhatsApp Image 2025-04-23 at 18 05 50_03fe1faf](https://github.com/user-attachments/assets/5e8ebab5-d117-4145-909a-1cee426a7f10)
 
 
 ## Creating Source Code:
@@ -80,7 +81,7 @@ It will invoke the nclaunch window for functional simulation we can compile,elab
 
 ## Fig 3: Setting Multi-step simulation
 
-![WhatsApp Image 2025-04-21 at 21 13 48_67d7b472](https://github.com/user-attachments/assets/c707f7b8-2f31-48a6-948e-16d9fa66ec35)
+![WhatsApp Image 2025-04-23 at 18 05 51_2762d018](https://github.com/user-attachments/assets/d36451bf-490d-415e-81e7-20db53984488)
 
 Select Multiple Step and then select “Create cds.lib File” as shown in below figure
 
@@ -88,7 +89,8 @@ Click the cds.lib file and save the file by clicking on Save option
 
 ## Fig 4: cds.lib file Creation
 
-![WhatsApp Image 2025-04-21 at 21 13 49_17192b66](https://github.com/user-attachments/assets/32bf6def-254d-4d86-91e4-2f849f45d7a2)
+![WhatsApp Image 2025-04-23 at 18 05 49_fa244512](https://github.com/user-attachments/assets/b94d1cec-b5b4-49be-8516-c259febdb616)
+
 
 
 	Save cds.lib file and select the correct option for cds.lib file format based on the  HDL Language and Libraries used.
@@ -99,7 +101,8 @@ Click the cds.lib file and save the file by clicking on Save option
 
 ## Fig 5: Selection of Don’t include any libraries
 
-![WhatsApp Image 2025-04-21 at 21 13 48_38dac42c](https://github.com/user-attachments/assets/538dc56e-d5d7-4a3b-a656-c1ce8628ee8e)
+![WhatsApp Image 2025-04-23 at 18 05 51_5064ca5e](https://github.com/user-attachments/assets/529aa427-2282-4f09-a66d-682e1e0571d0)
+
 
 
 	A Click “OK” in the “nclaunch: Open Design Directory” window
@@ -111,7 +114,8 @@ Click the cds.lib file and save the file by clicking on Save option
 	Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation
 
 ## Fig 6: Nclaunch Window
-![WhatsApp Image 2025-04-21 at 21 13 49_3a963248](https://github.com/user-attachments/assets/48039ff8-6a9e-422d-a947-e27a621c43f2)
+![WhatsApp Image 2025-04-23 at 18 05 49_6c280dd6](https://github.com/user-attachments/assets/dab6ee1a-3d8f-44de-9102-906259a5f499)
+
 
 
 To perform the function simulation, the following three steps are involved Compilation, Elaboration and Simulation.
@@ -137,7 +141,7 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation 
 
 ## Fig 7: Compiled database in worklib
-![WhatsApp Image 2025-04-21 at 21 13 48_c0c70d93](https://github.com/user-attachments/assets/c9292f0f-53c5-446e-be99-613c8abecb1e)
+![WhatsApp Image 2025-04-23 at 18 05 49_526ee7fc](https://github.com/user-attachments/assets/13c0d4fb-859f-428e-805b-cd7699b954cc)
 
 
 	After compilation it will come under worklib you can see in right side window
@@ -170,6 +174,7 @@ It contains statements that map logical library names to their physical director
 	After elaboration the file will come under snapshot. Select the test bench and simulate it. 
 
 ## Fig 8: Elaboration Launch Option
+![WhatsApp Image 2025-04-23 at 18 05 51_6b365169](https://github.com/user-attachments/assets/0d69acf8-b2f7-4ea4-9bc4-d9b3d729bb97)
 
 ### Step 3: Simulation: – Simulate with the given test vectors over a period of time to observe the output behaviour. 
 
@@ -183,14 +188,16 @@ It contains statements that map logical library names to their physical director
 
 ## Fig 9: Design Browser window for simulation
 
-![WhatsApp Image 2025-04-21 at 21 13 49_0bd333c2](https://github.com/user-attachments/assets/fb569083-d0fe-4e17-aa43-bef2f4893fd9)
+![WhatsApp Image 2025-04-23 at 18 05 50_6bfc7765](https://github.com/user-attachments/assets/9f3db4be-478d-4a53-9c07-c676c891cda3)
+
 
 ## Fig 10: Simulation Waveform Window
-![WhatsApp Image 2025-04-21 at 21 13 48_8809ef4a](https://github.com/user-attachments/assets/ef752b76-8e3f-4e5f-88df-147d3433cb35)
+![WhatsApp Image 2025-04-23 at 18 05 50_811f5d7c](https://github.com/user-attachments/assets/d16e5464-8153-4557-8b69-2067abd8234b)
 
 
 ## Fig 11: Simulation Waveform Window
-![WhatsApp Image 2025-04-21 at 21 13 49_453a22c5](https://github.com/user-attachments/assets/5842caf4-59bf-48be-b168-87097b847a20)
+![WhatsApp Image 2025-04-23 at 18 05 51_c8e07a14](https://github.com/user-attachments/assets/0c30d854-0ba7-4ac8-9c70-af132d394fe5)
+
 
 ### Result
 
