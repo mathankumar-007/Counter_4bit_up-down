@@ -44,49 +44,10 @@ Functional Simulation:
 
 
 ## Fig 2: Invoke the Cadence Environment
-![WhatsApp Image 2025-04-23 at 21 10 41_d287df55](https://github.com/user-attachments/assets/09574ed8-94c0-4f39-8bfa-5a3b1bd12762)
-
+![WhatsApp Image 2025-04-23 at 21 10 41_429189eb](https://github.com/user-attachments/assets/81faa09f-43a5-4f50-ae3a-3ae1d103f1d6)
 
 
 ## Creating Source Code:
-```
-`timescale 1ns/1ns
-module counter(clk,m,rst,count);
-input clk,m,rst;
-output reg [3:0] count;
-always@(posedge clk or negedge rst)
-begin
-if (!rst)
-count=0;
-else if(m)
-count=count+1;
-else
-count=count-1;
-end
-endmodule
-```
-```
-`timescale 1ns/1ns
-module counter_test;
-reg clk,rst,m;
-wire [3:0] count;
-initial
-begin
-clk=0;
-rst=0;#5;
-rst=1;
-end
-initial
-begin
-m=1;
-#160 m=0;
-end
-counter dut(clk,m,rst,count);
-always #5 clk=~clk;
-initial $monitor("Time=%t rst=%b clk=%b count=%b" , $time,rst,clk,count);
-initial
-#320 $finish;
-endmodule```
 
 	In the Terminal, type gedit <filename>.v or <filename>.vhdl depending on the HDL Language you are to use (ex: 4b_up_downCount.v).
 
@@ -113,26 +74,17 @@ endmodule```
 
 	linux:/> nclaunch&                 // On subsequent calls to NCVERILOG
 
-
-
 It will invoke the nclaunch window for functional simulation we can compile,elaborate and simulate it using Multiple step
 
 ## Fig 3: Setting Multi-step simulation
-
-![WhatsApp Image 2025-04-23 at 21 10 40_bf65da80](https://github.com/user-attachments/assets/ba51ebda-6d4c-4938-b14d-ca31be11c04e)
-
+![WhatsApp Image 2025-04-23 at 21 14 46_89b60de7](https://github.com/user-attachments/assets/e4c0cd37-08e7-4e46-95c0-a92c9f110ace)
 
 Select Multiple Step and then select “Create cds.lib File” as shown in below figure
 
 Click the cds.lib file and save the file by clicking on Save option
 
 ## Fig 4: cds.lib file Creation
-
-![WhatsApp Image 2025-04-23 at 21 10 39_94ad7ed8](https://github.com/user-attachments/assets/33fad162-3cec-42a2-af84-6c2eca57218c)
-
-
-
-
+![WhatsApp Image 2025-04-23 at 21 10 39_bd6bee80](https://github.com/user-attachments/assets/2c3e7359-430c-4423-a121-0bc898beee90)
 
 	Save cds.lib file and select the correct option for cds.lib file format based on the  HDL Language and Libraries used.
 
@@ -141,10 +93,7 @@ Click the cds.lib file and save the file by clicking on Save option
 	We are simulating verilog design without using any libraries
 
 ## Fig 5: Selection of Don’t include any libraries
-![WhatsApp Image 2025-04-23 at 21 10 36_9a0a8ff9](https://github.com/user-attachments/assets/150cbb18-57ff-4d2b-b1c1-f01477d05281)
-
-
-
+![WhatsApp Image 2025-04-23 at 21 10 36_bfa39918](https://github.com/user-attachments/assets/dac6cade-1d7c-48ed-a68b-c34ced08f2ee)
 
 	A Click “OK” in the “nclaunch: Open Design Directory” window
 
@@ -155,10 +104,7 @@ Click the cds.lib file and save the file by clicking on Save option
 	Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation
 
 ## Fig 6: Nclaunch Window
-![WhatsApp Image 2025-04-23 at 21 10 38_4a1546cf](https://github.com/user-attachments/assets/e4827c5a-fc91-4cd8-b3f4-7218374832c3)
-
-
-
+![WhatsApp Image 2025-04-23 at 21 10 40_fa2738e9](https://github.com/user-attachments/assets/3bd2099b-c002-4fa2-8562-2b8b8b33ca77)
 
 To perform the function simulation, the following three steps are involved Compilation, Elaboration and Simulation.
 
@@ -183,8 +129,7 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation 
 
 ## Fig 7: Compiled database in worklib
-![WhatsApp Image 2025-04-23 at 21 10 36_973efb5f](https://github.com/user-attachments/assets/02288466-ef1d-4d41-b875-d69754cf8eae)
-
+![WhatsApp Image 2025-04-23 at 21 10 36_2ae3445e](https://github.com/user-attachments/assets/a0d96a22-981a-4693-98ed-405dc1bf625e)
 
 	After compilation it will come under worklib you can see in right side window
 
@@ -207,16 +152,14 @@ It contains statements that map logical library names to their physical director
   
 5.	Computes parameter values
   
-6.	Checks for hierarchical names conflicts
-
-
-7.	It also establishes net connectivity and prepares all of this for simulation
-
+7.	Checks for hierarchical names conflicts
+  
+9.	It also establishes net connectivity and prepares all of this for simulation
     
 	After elaboration the file will come under snapshot. Select the test bench and simulate it. 
 
 ## Fig 8: Elaboration Launch Option
-![WhatsApp Image 2025-04-23 at 21 10 37_595f2a1c](https://github.com/user-attachments/assets/7d39587a-7816-47a5-996c-179b1b9b0121)
+![WhatsApp Image 2025-04-23 at 21 10 38_d3533465](https://github.com/user-attachments/assets/f1ca484b-2647-4aec-8aa6-cdea30048f98)
 
 ### Step 3: Simulation: – Simulate with the given test vectors over a period of time to observe the output behaviour. 
 
@@ -229,18 +172,13 @@ It contains statements that map logical library names to their physical director
 	Steps for simulation – Run the simulation command with simulator options
 
 ## Fig 9: Design Browser window for simulation
-
-![WhatsApp Image 2025-04-23 at 21 10 39_6b8209f6](https://github.com/user-attachments/assets/a60e75ee-8153-49a7-b692-d61d39528acf)
-
-
+![WhatsApp Image 2025-04-23 at 21 10 38_56eb81f1](https://github.com/user-attachments/assets/ad36e7c5-1cfa-41d1-8d6d-08832f2f5365)
 
 ## Fig 10: Simulation Waveform Window
-![WhatsApp Image 2025-04-23 at 21 10 37_595f2a1c](https://github.com/user-attachments/assets/87d2a9d0-6d8b-4332-864d-5b4b4843dc44)
+![WhatsApp Image 2025-04-23 at 21 10 37_069b5d08](https://github.com/user-attachments/assets/5041b052-94a6-429d-a2e4-c081348ad327)
 
 ## Fig 11: Simulation Waveform Window
-![WhatsApp Image 2025-04-23 at 21 10 37_c6dc525e](https://github.com/user-attachments/assets/ac35b438-48d5-4733-b90d-bd7a0ceee783)
-
-
+![WhatsApp Image 2025-04-23 at 21 10 37_d10f1476](https://github.com/user-attachments/assets/e828ab78-ff67-43f5-b482-af0cd41c1fa0)
 
 ### Result
 
