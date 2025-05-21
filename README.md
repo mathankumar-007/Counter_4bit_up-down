@@ -44,7 +44,8 @@ Functional Simulation:
 
 
 ## Fig 2: Invoke the Cadence Environment
-![WhatsApp Image 2025-04-23 at 18 05 50_03fe1faf](https://github.com/user-attachments/assets/5e8ebab5-d117-4145-909a-1cee426a7f10)
+![WhatsApp Image 2025-04-23 at 21 10 41_d287df55](https://github.com/user-attachments/assets/09574ed8-94c0-4f39-8bfa-5a3b1bd12762)
+
 
 
 ## Creating Source Code:
@@ -112,14 +113,14 @@ endmodule```
 
 	linux:/> nclaunch&                 // On subsequent calls to NCVERILOG
 
-![WhatsApp Image 2025-04-21 at 21 13 49_8ef4dd38](https://github.com/user-attachments/assets/2d263b9d-0355-4f5d-b4b1-c0e5e1951dd1)
 
 
 It will invoke the nclaunch window for functional simulation we can compile,elaborate and simulate it using Multiple step
 
 ## Fig 3: Setting Multi-step simulation
 
-![WhatsApp Image 2025-04-23 at 18 05 51_2762d018](https://github.com/user-attachments/assets/d36451bf-490d-415e-81e7-20db53984488)
+![WhatsApp Image 2025-04-23 at 21 10 40_bf65da80](https://github.com/user-attachments/assets/ba51ebda-6d4c-4938-b14d-ca31be11c04e)
+
 
 Select Multiple Step and then select “Create cds.lib File” as shown in below figure
 
@@ -127,7 +128,9 @@ Click the cds.lib file and save the file by clicking on Save option
 
 ## Fig 4: cds.lib file Creation
 
-![WhatsApp Image 2025-04-23 at 18 05 49_fa244512](https://github.com/user-attachments/assets/b94d1cec-b5b4-49be-8516-c259febdb616)
+![WhatsApp Image 2025-04-23 at 21 10 39_94ad7ed8](https://github.com/user-attachments/assets/33fad162-3cec-42a2-af84-6c2eca57218c)
+
+
 
 
 
@@ -138,8 +141,8 @@ Click the cds.lib file and save the file by clicking on Save option
 	We are simulating verilog design without using any libraries
 
 ## Fig 5: Selection of Don’t include any libraries
+![WhatsApp Image 2025-04-23 at 21 10 36_9a0a8ff9](https://github.com/user-attachments/assets/150cbb18-57ff-4d2b-b1c1-f01477d05281)
 
-![WhatsApp Image 2025-04-23 at 18 05 51_5064ca5e](https://github.com/user-attachments/assets/529aa427-2282-4f09-a66d-682e1e0571d0)
 
 
 
@@ -152,7 +155,8 @@ Click the cds.lib file and save the file by clicking on Save option
 	Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation
 
 ## Fig 6: Nclaunch Window
-![WhatsApp Image 2025-04-23 at 18 05 49_6c280dd6](https://github.com/user-attachments/assets/dab6ee1a-3d8f-44de-9102-906259a5f499)
+![WhatsApp Image 2025-04-23 at 21 10 38_4a1546cf](https://github.com/user-attachments/assets/e4827c5a-fc91-4cd8-b3f4-7218374832c3)
+
 
 
 
@@ -179,7 +183,7 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation 
 
 ## Fig 7: Compiled database in worklib
-![WhatsApp Image 2025-04-23 at 18 05 49_526ee7fc](https://github.com/user-attachments/assets/13c0d4fb-859f-428e-805b-cd7699b954cc)
+![WhatsApp Image 2025-04-23 at 21 10 36_973efb5f](https://github.com/user-attachments/assets/02288466-ef1d-4d41-b875-d69754cf8eae)
 
 
 	After compilation it will come under worklib you can see in right side window
@@ -212,7 +216,7 @@ It contains statements that map logical library names to their physical director
 	After elaboration the file will come under snapshot. Select the test bench and simulate it. 
 
 ## Fig 8: Elaboration Launch Option
-![WhatsApp Image 2025-04-23 at 18 05 51_6b365169](https://github.com/user-attachments/assets/0d69acf8-b2f7-4ea4-9bc4-d9b3d729bb97)
+![WhatsApp Image 2025-04-23 at 21 10 37_595f2a1c](https://github.com/user-attachments/assets/7d39587a-7816-47a5-996c-179b1b9b0121)
 
 ### Step 3: Simulation: – Simulate with the given test vectors over a period of time to observe the output behaviour. 
 
@@ -226,15 +230,16 @@ It contains statements that map logical library names to their physical director
 
 ## Fig 9: Design Browser window for simulation
 
-![WhatsApp Image 2025-04-23 at 18 05 50_6bfc7765](https://github.com/user-attachments/assets/9f3db4be-478d-4a53-9c07-c676c891cda3)
+![WhatsApp Image 2025-04-23 at 21 10 39_6b8209f6](https://github.com/user-attachments/assets/a60e75ee-8153-49a7-b692-d61d39528acf)
+
 
 
 ## Fig 10: Simulation Waveform Window
-![WhatsApp Image 2025-04-23 at 18 05 50_811f5d7c](https://github.com/user-attachments/assets/d16e5464-8153-4557-8b69-2067abd8234b)
-
+![WhatsApp Image 2025-04-23 at 21 10 37_595f2a1c](https://github.com/user-attachments/assets/87d2a9d0-6d8b-4332-864d-5b4b4843dc44)
 
 ## Fig 11: Simulation Waveform Window
-![WhatsApp Image 2025-04-23 at 18 05 51_c8e07a14](https://github.com/user-attachments/assets/0c30d854-0ba7-4ac8-9c70-af132d394fe5)
+![WhatsApp Image 2025-04-23 at 21 10 37_c6dc525e](https://github.com/user-attachments/assets/ac35b438-48d5-4733-b90d-bd7a0ceee783)
+
 
 
 ### Result
